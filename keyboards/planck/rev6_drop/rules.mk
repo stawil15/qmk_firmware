@@ -28,3 +28,7 @@ SRC += matrix.c
 
 LAYOUTS = ortho_4x12 planck_mit
 LAYOUTS_HAS_RGB = no
+
+CAPS_WORD_ENABLE = yes
+LTO_ENABLE = yes
+UNICODEMAP_ENABLE = yes
