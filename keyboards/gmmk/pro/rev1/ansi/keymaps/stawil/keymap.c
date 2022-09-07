@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_TAB,    KC_Q,    KC_W,  KC_E,  KC_R,  KC_T,  KC_Y,  KC_U,  KC_I,    KC_O,    KC_P, KC_LBRC, KC_RBRC, KC_BSLS,          KC_PGUP,
         KC_CAPS,    KC_A,    KC_S,  KC_D,  KC_F,  KC_G,  KC_H,  KC_J,  KC_K,    KC_L, KC_SCLN, KC_QUOT,           KC_ENT,          KC_PGDN,
         KC_LSPO,             KC_Z,  KC_X,  KC_C,  KC_V,  KC_B,  KC_N,  KC_M, KC_COMM,  KC_DOT, KC_SLSH,          KC_RSPC,   KC_UP,  KC_END,
-        KC_LCTL, KC_LALT, KC_LGUI,                     KC_SPC,                        KC_RALT,   MO(1), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
+        KC_LCTL, KC_LALT, KC_LGUI,                     KC_SPC,                        KC_RGUI,   MO(1), KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
     ),
 
     [1] = LAYOUT(
@@ -38,6 +38,5 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         CAPS_WORD,       X(E_LMAO),       X(E_ROFL),    X(E_CRYY), X(E_COOL), X(E_WINK), X(E_KISS), X(E_HRNY),  X(E_LOVD), X(E_GRIN), X(E_ROLL), X(E_TONG),                     XXXXXXX,                     RGB_HUD,
           KC_LOCK,                        X(E_PRAY),    X(E_PRTY), X(E_SKUL), X(E_BEEE),  X(E_BBB), X(E_BUSS), X(E_TRAIN),   XXXXXXX,   XXXXXXX,   XXXXXXX,                     XXXXXXX,   RGB_VAI, RGB_MODE_RAINBOW,
           XXXXXXX,         XXXXXXX,         XXXXXXX,                                       XXXXXXX,                                     XXXXXXX,   XXXXXXX,   XXXXXXX, RGB_MODE_REVERSE,   RGB_VAD, RGB_MODE_FORWARD
-    ),
-
+    )
 };

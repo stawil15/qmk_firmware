@@ -1,6 +1,7 @@
 
 #include "quantum.h"
 #include "functions.h"
+#include "emoji.h"
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static struct {
@@ -60,12 +61,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
             return false;
 
-        /* Unicode */
-        case UC_HELP:
-            if (record->event.pressed) {
-                SEND_STRING("https://beta.docs.qmk.fm/using-qmk/software-features/feature_unicode");
-            }
-            return false;
         case UC_SHRG: // ¯\_(ツ)_/¯
             if (record->event.pressed) {
                 send_unicode_string("0x00AF 0x005C 0x005F 0x0028 0x30C4 0x0029 0x005F 0x002F 0x00AF");
