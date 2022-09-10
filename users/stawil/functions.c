@@ -1,7 +1,7 @@
 
 #include "quantum.h"
 #include "functions.h"
-#include "emoji.h"
+
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static struct {
@@ -43,7 +43,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
 
     switch (keycode) {
-        /* z e s t y   m e m e s */
+        case SCRNSHT:
+            SEND_STRING(SS_LGUI(SS_LSFT("4")));
+            return false;
         case WIDETXT:
             if (record->event.pressed) {
                 w_i_d_e_t_e_x_t.on = !w_i_d_e_t_e_x_t.on;
