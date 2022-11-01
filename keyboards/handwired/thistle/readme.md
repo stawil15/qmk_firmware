@@ -4,7 +4,7 @@
 
 *A short description of the keyboard/project*
 
-* Keyboard Maintainer: [Saeed Tawil](https://github.com/Saeed Tawil)
+* Keyboard Maintainer: [Saeed Tawil](https://github.com/stawil15)
 * Hardware Supported: *The PCBs, controllers supported*
 * Hardware Availability: *Links to where you can find this hardware*
 
