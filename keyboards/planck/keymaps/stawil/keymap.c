@@ -18,6 +18,8 @@
 #include "raw_hid.h"
 #include "print.h"
 #include "muse.h"
+#include "emoji.h"
+#include "functions.h"
 
 /*
  * Define keyboard name to be used by UI.
@@ -49,7 +51,7 @@ enum custom_layers {
 #define UC_DEGF UC(0x2109)  // ℉
 
 // Time (ms) to wait between frames for the wake rgb animation
-#define WAKE_ANIMATION_TIMER_FREQUENCY 50
+#define WAKE_ANIMATION_TIMER_FREQUENCY 50 
 
 // Is a display connected
 // #define USING_OLED_DISPLAY false

@@ -9,7 +9,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //      Tab      Q        W        E        R        T        Y        U        I        O        P        [        ]        \                 PgUp
 //      Caps     A        S        D        F        G        H        J        K        L        ;        "                 Enter             PgDn
 //      Sh_L              Z        X        C        V        B        N        M        ,        .        ?                 Sh_R     Up       End
-//      Ct_L    Win_L    Alt_L                                SPACE                               Ct_R     FN      Alt_R     Left     Down     Right
+//      Ctl_L   Opt_L    Cmd_L                                SPACE                               Cmd_R    FN      Ctl_R     Left     Down     Right
 
 
     // The FN key by default maps to a momentary toggle to layer 1 to provide access to the RESET key (to put the board into bootloader mode). Without
