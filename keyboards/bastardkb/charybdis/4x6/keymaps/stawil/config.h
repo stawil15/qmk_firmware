@@ -16,6 +16,35 @@
  */
 #pragma once
 
+#ifdef VIA_ENABLE
+/* VIA configuration. */
+#    define DYNAMIC_KEYMAP_LAYER_COUNT 5
+#endif // VIA_ENABLE
+
+/* Disable unused features. */
+#define NO_ACTION_ONESHOT
+
+#ifndef TAPPING_TERM
+/**
+ * \brief Configure the global tapping term (default: 200ms).
+ *
+ * If you have a lot of accidental mod activations, crank up the tapping term.
+ *
+ * See docs.qmk.fm/using-qmk/software-features/tap_hold#tapping-term
+ */
+#    define TAPPING_TERM 175
+#endif // TAPPING_TERM
+
+/* Charybdis-specific features. */
+
+#ifdef POINTING_DEVICE_ENABLE
+// Automatically enable the pointer layer when moving the trackball.  See also:
+// - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS`
+// - `CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD`
+// #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+// #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS 1000
+#endif // POINTING_DEVICE_ENABLE
+
 /* RGB Matrix. */
 
 #ifdef RGB_MATRIX_ENABLE
@@ -36,4 +65,4 @@
 #    define RGB_MATRIX_STARTUP_SAT 255
 #    define RGB_MATRIX_STARTUP_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
 #    define RGB_MATRIX_STARTUP_HSV RGB_MATRIX_STARTUP_HUE, RGB_MATRIX_STARTUP_SAT, RGB_MATRIX_STARTUP_VAL
-#endif  // RGB_MATRIX_ENABLE
+#endif // RGB_MATRIX_ENABLE
